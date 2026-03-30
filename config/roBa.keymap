@@ -26,43 +26,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
@@ -80,10 +44,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R                    &kp T                                          &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D      &kp F                    &kp G      &msc MOVE_Y(0)      &kp MINUS       &kp H   &kp J  &kp K      &kp L    &kp ENTER
-&kp Z           &kp X         &kp C      &kp V                    &kp B      &kp SPACE           &kp DEL         &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kt LANG_ZENKAKUHANKAKU  &mkp LCLK  &mkp RCLK           &kp INT_HENKAN  &tog 1                             &kp BACKSPACE
+&kp Q           &kp W         &kp E      &kp R                    &kp T                                          &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D      &kp F                    &kp G      &msc MOVE_Y(0)      &kp MINUS       &kp H         &kp J  &kp K      &kp L    &kp ENTER
+&kp Z           &kp X         &kp C      &kp V                    &kp B      &kp SPACE           &kp DEL         &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kt LANG_ZENKAKUHANKAKU  &mkp LCLK  &mkp RCLK           &kp INT_HENKAN  &lt 1 K_UNDO                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +55,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &trans       &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
-&trans          &kp K_COPY   &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(0)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
-&kp K_CUT       &kp K_PASTE  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &trans              &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
-&kp LEFT_SHIFT  &trans       &kp N0  &trans        &mkp LCLK     &mkp RCLK           &trans        &trans                                                              &kp BACKSPACE
+&kp ESCAPE      &trans     &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
+&trans          &kp LC(C)  &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(0)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
+&kp LC(B)       &kp LC(V)  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &trans              &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
+&kp LEFT_SHIFT  &trans     &kp N0  &trans        &mkp LCLK     &mkp RCLK           &trans        &trans                                                              &kp BACKSPACE
             >;
         };
 
