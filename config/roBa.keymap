@@ -36,19 +36,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &none  &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
-&none           &none  &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
-&none           &none  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &none               &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
-&kp LEFT_SHIFT  &none  &kp N0  &none         &mkp LCLK     &mkp RCLK           &none         &none                                                               &kp BACKSPACE
-            >;
-        };
-
-        NUM {
-            bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp ESCAPE      &none           &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
+&kp C_AC_BACK   &kp C_AC_COPY   &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
+&kp C_AC_CUT    &kp C_AC_PASTE  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &none               &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
+&kp LEFT_SHIFT  &none           &kp N0  &none         &mkp LCLK     &mkp RCLK           &none         &none                                                               &kp BACKSPACE
             >;
         };
     };
