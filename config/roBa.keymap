@@ -83,7 +83,7 @@
 &kp Q             &kp W         &kp E         &kp R   &kp T                                         &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F   &kp G      &msc MOVE_Y(5)      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V   &kp B      &kp COLON           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &tog 2  &mkp LCLK  &mkp RCLK           &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &tog 1  &mkp LCLK  &mkp RCLK           &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_1                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &kp N8  &kp N5        &kp NUMBER_2  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &kp N0  &trans        &trans        &trans      &trans   &trans                          &kp F12
             >;
         };
 
@@ -146,12 +146,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        kigou {
-            if-layers = <2>;
-            then-layer = <2>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
