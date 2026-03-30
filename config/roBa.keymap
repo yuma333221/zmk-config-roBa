@@ -32,8 +32,6 @@
 &kp Z       &kp X         &kp C      &kp V     &kp B      &kp SPACE           &kp DEL    &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LSHIFT  &kp LEFT_WIN  &kp LCTRL  &kt INT5  &mkp LCLK  &mkp RCLK           &kp INT4   &tog 1                             &kp BACKSPACE
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
