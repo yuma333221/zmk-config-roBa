@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W         &kp E      &kp R                    &kp T                                          &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D      &kp F                    &kp G      &msc MOVE_Y(5)      &kp MINUS       &kp H   &kp J  &kp K      &kp L    &kp ENTER
-&kp Z       &kp X         &kp C      &kp V                    &kp B      &kp SPACE           &kp DEL         &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LSHIFT  &kp LEFT_WIN  &kp LCTRL  &kt LANG_ZENKAKUHANKAKU  &mkp LCLK  &mkp RCLK           &kp INT_HENKAN  &tog 1                             &kp BACKSPACE
+&kp Q       &kp W         &kp E      &kp R     &kp T                                     &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D      &kp F     &kp G      &msc MOVE_Y(5)      &kp MINUS  &kp H   &kp J  &kp K      &kp L    &kp ENTER
+&kp Z       &kp X         &kp C      &kp V     &kp B      &kp SPACE           &kp DEL    &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LSHIFT  &kp LEFT_WIN  &kp LCTRL  &kt INT5  &mkp LCLK  &mkp RCLK           &kp INT4   &tog 1                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &none   &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
-&none           &copy   &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
-&cut            &paste  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &none               &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
-&kp LEFT_SHIFT  &none   &kp N0  &none         &mkp LCLK     &mkp RCLK           &none         &tog 0                                                              &kp BACKSPACE
+&kp ESCAPE      &none           &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
+&kp C_AC_BACK   &kp C_AC_COPY   &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
+&kp C_AC_CUT    &kp C_AC_PASTE  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &none               &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
+&kp LEFT_SHIFT  &none           &kp N0  &none         &mkp LCLK     &mkp RCLK           &none         &tog 0                                                              &kp BACKSPACE
             >;
         };
 
