@@ -39,6 +39,29 @@
         };
     };
 
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B)>;
+            label = "CUT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &trans     &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
-&trans          &kp LC(C)  &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
-&kp LC(B)       &kp LC(V)  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &trans              &kp DELETE    &kt EXCLAMATION  &kp COLON     &trans            &trans             &trans
-&kp LEFT_SHIFT  &trans     &kp N0  &trans        &mkp LCLK     &mkp RCLK           &trans        &trans                                                              &kp BACKSPACE
+&kp ESCAPE      &none   &kp N7  &kp NUMBER_4  &kp NUMBER_1                                    &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
+&none           &copy   &kp N8  &kp N5        &kp NUMBER_2  &msc MOVE_Y(5)      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
+&cut            &paste  &kp N9  &kp NUMBER_6  &kp NUMBER_3  &none               &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
+&kp LEFT_SHIFT  &none   &kp N0  &none         &mkp LCLK     &mkp RCLK           &none         &tog 0                                                              &kp BACKSPACE
             >;
         };
 
