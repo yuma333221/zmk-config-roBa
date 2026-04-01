@@ -52,6 +52,13 @@
             bindings = <&kp LCTRL &kp B>;
             label = "CUT";
         };
+
+        hannkakuzennkaku: hannkakuzennkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp GRAVE>;
+            label = "HANNKAKUZENNKAKU";
+        };
     };
 
     behaviors {
@@ -69,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W         &kp E      &kp R      &kp T                                &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D      &kp F      &kp G      &mkp MCLK      &kp MINUS  &kp H  &kp J  &kp K      &kp L    &kp ENTER
-&kp Z       &kp X         &kp C      &kp V      &kp B      &kp SPACE      &kp DEL    &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LSHIFT  &kp LEFT_WIN  &kp LCTRL  &kt LANG5  &mkp LCLK  &mkp RCLK      &kp INT4   &mo 1                             &kp BACKSPACE
+&kp Q       &kp W         &kp E      &kp R              &kp T                                &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D      &kp F              &kp G      &mkp MCLK      &kp MINUS  &kp H  &kp J  &kp K      &kp L    &kp ENTER
+&kp Z       &kp X         &kp C      &kp V              &kp B      &kp SPACE      &kp DEL    &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LSHIFT  &kp LEFT_WIN  &kp LCTRL  &hannkakuzennkaku  &mkp LCLK  &mkp RCLK      &kp INT4   &mo 1                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
