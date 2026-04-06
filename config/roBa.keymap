@@ -60,8 +60,8 @@
         FUNCTION {
             bindings = <
 &kp ESCAPE      &none         &kp N7        &kp N8        &kp N9                                     &kp UNDER        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5
-&back           &copy         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MCLK      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
-&cut            &paste        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
+&kp LC(Z)       &kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MCLK      &kp QUESTION  &kp PLUS         &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ENTER
+&kp LC(B)       &kp LC(V)     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp DELETE    &kt EXCLAMATION  &kp COLON     &none             &none              &none
 &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL     &none         &mkp LCLK     &mkp RCLK      &none         &none                                                               &kp BACKSPACE
             >;
         };
