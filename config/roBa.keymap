@@ -25,34 +25,6 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
-            label = "COPY";
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp V>;
-            label = "PASTE";
-        };
-
-        back: back {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp Z>;
-            label = "BACK";
-        };
-
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp B>;
-            label = "CUT";
-        };
-
         hannkakuzennkaku: hannkakuzennkaku {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
